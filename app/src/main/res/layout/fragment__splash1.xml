@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_Splash1">
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/phot5" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textColor="#36596a"
+            android:text="Welcome"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Lorem ipsum dolor sit amet, consetetur"
+            android:textSize="18sp"
+            android:textColor="#675D5D"
+            app:layout_constraintEnd_toEndOf="@+id/textview1"
+            app:layout_constraintStart_toStartOf="@+id/textview1"
+            app:layout_constraintTop_toBottomOf="@+id/textview1" />
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sadipscing elitr, sed diam"
+            android:textSize="18sp"
+            android:textColor="#675D5D"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/textview2"
+            app:layout_constraintStart_toStartOf="@+id/textview2"
+            app:layout_constraintTop_toBottomOf="@+id/textview2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:src="@drawable/unselected"
+            app:layout_constraintTop_toBottomOf="@+id/textview3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selected"
+            app:layout_constraintEnd_toStartOf="@id/imageView2"
+            app:layout_constraintTop_toTopOf="@id/imageView2"
+            app:layout_constraintBottom_toBottomOf="@id/imageView2"
+            android:layout_marginEnd="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/unselected"
+            app:layout_constraintBottom_toBottomOf="@id/imageView2"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
